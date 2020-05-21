@@ -1,0 +1,140 @@
+ <!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!--style-->
+    <style>
+      
+
+      /* On screens that are 600px wide or less, make the menu links stack on top of each other instead of next to each other */
+      @media screen and (max-width:1500px) {
+        .navbar-brand {
+          background-color: hotpink;
+        }
+        .bg-light {
+          background-color: blue;
+        }
+        .paragraph {
+          background-color: papayawhip;
+        }
+
+      }
+      @media screen and (max-width:650px) {
+        .navbar-brand {
+          background-color: coral;
+        }
+        .bg-light {
+          background-color: green;
+        }
+        .nav-item {
+          background-color: lightblue;
+        }
+        .paragraph {
+          background-color: lightseagreen;
+        }
+
+      }
+
+
+      </style>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+    <title>Home Page</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <nav class="navbar navbar-expand-md navbar-light bg-light fixed-top">
+            <a class="navbar-brand" href="index.html"><strong>Latitude</strong><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="30" height="30"><path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"></path></svg></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse row justify-content-md-end" id="navbarsExampleDefault">
+              <ul class="navbar-nav">
+                <li class="nav-item dropdown active">
+                  <a class="nav-link dropdown-toggle" href="x" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <span class="badge badge-primary">Plots</span>
+                    </a>
+                  <div class="dropdown-menu" aria-labelledby="dropdown01">
+                    <a class="dropdown-item" href="visual1.html"><span class="badge badge-pill badge-success">Cloudiness</span></a>
+                    <a class="dropdown-item" href="visual2.html"><span class="badge badge-pill badge-danger">Humidity</span></a>
+                    <a class="dropdown-item" href="visual3.html"><span class="badge badge-pill badge-info">Max Temperature</span></a>
+                    <a class="dropdown-item" href="visual4.html"><span class="badge badge-pill badge-warning">Wind Speed</span></a>
+                  </div>
+                </li>
+                <li class="nav-item active">
+                  <a class="nav-link" href="compare.html"><span class="badge badge-warning">Comparison</span></a>
+                </li>
+                <li class="nav-item active">
+                  <a class="nav-link" href="data.html"><span class="badge badge-success">Data</span></a>
+                </li>
+              </ul>
+            </div>
+          </nav>     
+        </div>
+        <hr>
+        <hr>
+        <div class="col-md-8">
+          <header class="header" style="color:teal; font-size: 200%; margin-top: 35px;"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="40" height="40"><path fill-rule="evenodd" d="M16 9l-3-3V2h-2v2L8 1 0 9h2l1 5c0 .55.45 1 1 1h8c.55 0 1-.45 1-1l1-5h2zm-4 5H9v-4H7v4H4L2.81 7.69 8 2.5l5.19 5.19L12 14z"></path></svg></i>
+            <strong> Summary: Latitude vs. Climate</strong>
+          </header>
+          <hr>
+          <img src="lat_cloud.png" alt="Latitude vs X" class="rounded float-left">
+          <p class="paragraph" style="margin: auto; padding: 5px;">
+            <quote>According to the <a href="https://enviroliteracy.org/air-climate-weather/climate/latitude-climate-zones/"><em><b>Environmental Literacy Council</b></em></a>, "Latitude provides the location of a place north or south of the equator and is expressed by angular measurements ranging from 0° at the equator to 90° at the poles. Different latitudes on Earth receive different amounts of sunlight, and are a key factor in determining a region’s climate. For example, the higher the latitude of a given place (the farther away it is from the equator), the sharper the angle of the sun’s rays that reach it, meaning that the rays of the sun are spread across a broader area. Therefore, higher latitudes receive less heat than lower latitude areas nearer the equator."
+          </quote>
+          </p>
+          <p class="paragraph" style="margin: auto; padding: 5px;">
+            In this project, I’ll be creating a Python script to visualize the weather of 500+ cities across the world of varying distance from the equator. To accomplish this, I'll be utilizing a simple Python library, the OpenWeatherMap API, and a little common sense to create a representative model of weather across world cities.
+          </p>
+      </div>
+      <div class="col-md-4 col-xs-3">
+        <header style="color: teal; font-size: 150%; margin-top:35px;"><strong>Visualizations  </strong><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="25" height="25"><path fill-rule="evenodd" d="M16 14v1H0V0h1v14h15zM5 13H3V8h2v5zm4 0H7V3h2v10zm4 0h-2V6h2v7z"></path></svg><span class="sr-only">(current)</span></header>
+        <ul class="nav justify-content-left">
+          <li class="nav-item">
+            <a class="nav-link active" href="visual1.html"><img src="lat_cloud.png" alt="Lat vs cloud" class="img-fluid"></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="visual2.html"><img src="lat_humidity.png" alt="Lat vs humdity" class="img-fluid"></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="visual3.html"><img src="lat_maxtemp.png" alt="Lat vs Max Temp" class="img-fluid"></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="visual4.html"><img src="lat_windspeed.png" alt="Lat vs Windspeed" class="img-fluid"></a>
+          </li>
+        </ul>         
+      </div>
+  </div>
+</div>
+
+ 
+  
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+  </body>
+</html>
